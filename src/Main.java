@@ -148,22 +148,13 @@ public class Main {
         float salaryDenis = 83_690;
         float salaryChristina = 76_230;
 
-        float salaryMashaYear = salaryMasha * 12;
-        float salaryDenisYear = salaryDenis * 12;
-        float salaryChristinaYear = salaryChristina * 12;
-
         float salaryMashaAfterIncrease = salaryMasha + salaryMasha / 100 * 10;
         float salaryDenisAfterIncrease = salaryDenis + salaryDenis / 100 * 10;
         float salaryChristinaAfterIncrease = salaryChristina + salaryChristina / 100 * 10;
 
-        float salaryMashaAfterIncreaseYear = salaryMashaAfterIncrease * 12;
-        float salaryDenisAfterIncreaseYear = salaryDenisAfterIncrease * 12;
-        float salaryChristinaAfterIncreaseYear = salaryChristinaAfterIncrease * 12;
-
-
-        System.out.println("Маша теперь получает " + salaryMashaAfterIncrease + " рублей. Годовой доход вырос на " + (salaryMashaAfterIncreaseYear - salaryMashaYear) + " рублей");
-        System.out.println("Денис теперь получает " + salaryDenisAfterIncreaseYear + " рублей. Годовой доход вырос на " + (salaryDenisAfterIncreaseYear - salaryDenisYear) + " рублей");
-        System.out.println("Кристина теперь получает " + salaryChristinaAfterIncrease + " рублей. Годовой доход вырос на " + (salaryChristinaAfterIncreaseYear - salaryChristinaYear) + " рублей");
+        System.out.println("Маша теперь получает " + salaryMashaAfterIncrease + " рублей. Годовой доход вырос на " + (salaryMashaAfterIncrease * 12 - salaryMasha * 12) + " рублей");
+        System.out.println("Денис теперь получает " + salaryDenisAfterIncrease + " рублей. Годовой доход вырос на " + (salaryDenisAfterIncrease * 12 - salaryDenis * 12) + " рублей");
+        System.out.println("Кристина теперь получает " + salaryChristinaAfterIncrease + " рублей. Годовой доход вырос на " + (salaryChristinaAfterIncrease * 12 - salaryChristina * 12) + " рублей");
 
     }
 }
