@@ -152,9 +152,9 @@ public class Main {
         float salaryDenisAfterIncrease = salaryDenis + salaryDenis / 100 * 10;
         float salaryChristinaAfterIncrease = salaryChristina + salaryChristina / 100 * 10;
 
-        System.out.println("Маша теперь получает " + salaryMashaAfterIncrease + " рублей. Годовой доход вырос на " + (salaryMashaAfterIncrease * 12 - salaryMasha * 12) + " рублей");
-        System.out.println("Денис теперь получает " + salaryDenisAfterIncrease + " рублей. Годовой доход вырос на " + (salaryDenisAfterIncrease * 12 - salaryDenis * 12) + " рублей");
-        System.out.println("Кристина теперь получает " + salaryChristinaAfterIncrease + " рублей. Годовой доход вырос на " + (salaryChristinaAfterIncrease * 12 - salaryChristina * 12) + " рублей");
+        System.out.println("Маша теперь получает " + salaryMashaAfterIncrease + " рублей. Годовой доход вырос на " + ((salaryMashaAfterIncrease - salaryMasha) * 12) + " рублей");
+        System.out.println("Денис теперь получает " + salaryDenisAfterIncrease + " рублей. Годовой доход вырос на " + ((salaryDenisAfterIncrease - salaryDenis) * 12) + " рублей");
+        System.out.println("Кристина теперь получает " + salaryChristinaAfterIncrease + " рублей. Годовой доход вырос на " + ((salaryChristinaAfterIncrease - salaryChristina) * 12) + " рублей");
 
     }
 }
