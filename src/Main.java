@@ -8,6 +8,8 @@ public class Main {
         task6();
         task7();
         task8();
+        task8_2();
+
     }
 
     public static void task1 () {
@@ -156,5 +158,16 @@ public class Main {
         System.out.println("Денис теперь получает " + salaryDenisAfterIncrease + " рублей. Годовой доход вырос на " + ((salaryDenisAfterIncrease - salaryDenis) * 12) + " рублей");
         System.out.println("Кристина теперь получает " + salaryChristinaAfterIncrease + " рублей. Годовой доход вырос на " + ((salaryChristinaAfterIncrease - salaryChristina) * 12) + " рублей");
 
+    }
+
+    public static void task8_2 () {
+        System.out.println("Задача 8");
+
+        float[] salary = {67_760, 83_690, 76_230};
+        String[] names = {"Маша", "Денис", "Кристина"};
+        for (int i = 0; i < salary.length; i++) {
+            float salaryNow = salary[i] + salary[i] / 10;
+            System.out.println(names[i] + " теперь получает " + salaryNow + " рублей. Годовой доход вырос на " + (salaryNow * 12 - salary[i] * 12) + " рублей.");
+            }
     }
 }
